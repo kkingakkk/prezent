@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KOCHAM CIĘ ❤️</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: white;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  /* Animowane świecące serduszko */
+  h1 {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff4d6d;
+    text-shadow: 0 0 10px #ff4d6d, 0 0 20px #ff1e4d;
+    animation: pulse 1.8s infinite;
+  }
+
+  @keyframes pulse {
+    0% { text-shadow: 0 0 10px #ff4d6d; }
+    50% { text-shadow: 0 0 18px #ff1e4d; }
+    100% { text-shadow: 0 0 10px #ff4d6d; }
+  }
+
+  .video-container {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  video {
+    width: 94vw;
+    height: 84vh;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px solid #ff4d6d;
+    box-shadow: 0 0 20px #ff1e4d;
+  }
+
+  /* Placeholder zanim wstawisz film */
+  .placeholder {
+    width: 94vw;
+    height: 84vh;
+    border-radius: 18px;
+    border: 2px dashed #ff4d6d;
+    box-shadow: 0 0 15px #ff1e4d;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffb3c6;
+    font-size: 18px;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>KOCHAM CIĘ ❤️</h1>
+
+<div class="video-container">
+
+  <!-- 🔴 TUTAJ WKLEJASZ SWÓJ FILM 🔴
+       
+       Gdy będziesz miała plik .mp4,
+       zamień cały placeholder NA TO:
+
+       <video controls autoplay playsinline>
+         <source src="TU_WKLEJ_LINK_DO_FILMU.mp4" type="video/mp4">
+       </video>
+
+       ❤️
+  -->
+
+  <div class="placeholder">
+    <p>Tu będzie nasz film 📱🎥</p>
+    <p>(dodasz go później)</p>
+  </div>
+
+</div>
+
+</body>
+</html>
